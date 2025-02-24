@@ -1,0 +1,59 @@
+{
+	"author": {
+		"name": "Baptiste Pillot",
+		"email": "baptiste@pillot.fr"
+	},
+	"dependencies": {
+		"@itrocks/action": "latest",
+		"@itrocks/core-responses": "latest",
+		"@itrocks/route": "latest",
+		"pdfkit": "^0.15",
+		"svg-to-pdfkit": "^0.1"
+	},
+	"description": "Generic action-based PDF representation of object",
+	"devDependencies": {
+		"@types/node": "^22.9",
+		"@types/pdfkit": "^0.13",
+		"@types/svg-to-pdfkit": "^0.1",
+		"typescript": "~5.6"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"exports": "./cjs/print.js",
+	"homepage": "https://it.rocks",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"cjs/*",
+		"routes.json",
+		"!*.map"
+	],
+	"keywords": [
+		"API",
+		"backend",
+		"component",
+		"document",
+		"export",
+		"formatting",
+		"generic",
+		"it.rocks",
+		"PDF",
+		"print",
+		"render",
+		"standard",
+		"UI",
+		"UX"
+	],
+	"license": "ISC",
+	"name": "@itrocks/print",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/itrocks-ts/print.git"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json"
+	},
+	"types": "./cjs/print.d.ts",
+	"version": "0.0.1"
+}
