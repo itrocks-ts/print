@@ -15,6 +15,7 @@
 		"@types/node": "^22.9",
 		"@types/pdfkit": "^0.13",
 		"@types/svg-to-pdfkit": "^0.1",
+		"sass": "^1.83",
 		"typescript": "~5.6"
 	},
 	"engines": {
@@ -26,6 +27,7 @@
 		"LICENSE",
 		"README.md",
 		"cjs/*",
+		"css/*",
 		"routes.json",
 		"!*.map"
 	],
@@ -52,8 +54,9 @@
 		"url": "git+https://github.com/itrocks-ts/print.git"
 	},
 	"scripts": {
-		"build": "tsc -p tsconfig.json"
+		"build": "tsc -p tsconfig.json && npm run build:css",
+		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
 	"types": "./cjs/print.d.ts",
-	"version": "0.0.1"
+	"version": "0.0.2"
 }
