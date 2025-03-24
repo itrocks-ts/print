@@ -3,11 +3,11 @@ import { Need }        from '@itrocks/action'
 import { PdfResponse } from '@itrocks/core-responses'
 import { Route }       from '@itrocks/route'
 import PDFDocument     from 'pdfkit'
-import { PassThrough } from 'stream'
+import { PassThrough } from 'node:stream'
 
 @Need('object')
 @Route('/print')
-export default class Print extends Action
+export class Print extends Action
 {
 
 	async pdf()
