@@ -24,11 +24,11 @@
 	"exports": "./cjs/print.js",
 	"homepage": "https://it.rocks",
 	"files": [
+		"config.yaml",
 		"LICENSE",
 		"README.md",
 		"cjs/*",
 		"css/*",
-		"routes.json",
 		"!*.map"
 	],
 	"keywords": [
@@ -58,5 +58,5 @@
 		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
 	"types": "./cjs/print.d.ts",
-	"version": "0.0.4"
+	"version": "0.0.5"
 }
