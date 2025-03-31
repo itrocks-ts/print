@@ -7,7 +7,7 @@ import { PassThrough } from 'node:stream'
 
 @Need('object')
 @Route('/print')
-export class Print extends Action
+export class Print<T extends object = object> extends Action<T>
 {
 
 	async pdf()
