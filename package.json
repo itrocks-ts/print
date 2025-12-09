@@ -7,16 +7,16 @@
 		"@itrocks/action": "latest",
 		"@itrocks/core-responses": "latest",
 		"@itrocks/route": "latest",
-		"pdfkit": "^0.15",
+		"pdfkit": "^0.17",
 		"svg-to-pdfkit": "^0.1"
 	},
 	"description": "Generic action-based PDF representation of object",
 	"devDependencies": {
-		"@types/node": "^22.9",
-		"@types/pdfkit": "^0.13",
+		"@types/node": "^24.10",
+		"@types/pdfkit": "^0.17",
 		"@types/svg-to-pdfkit": "^0.1",
-		"sass": "^1.83",
-		"typescript": "~5.8"
+		"sass": "^1.95",
+		"typescript": "~5.9"
 	},
 	"engines": {
 		"node": ">=18"
@@ -58,5 +58,5 @@
 		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
 	"types": "./cjs/print.d.ts",
-	"version": "0.0.9"
+	"version": "0.0.10"
 }
