@@ -16,10 +16,10 @@
 		"@types/pdfkit": "^0.17",
 		"@types/svg-to-pdfkit": "^0.1",
 		"sass": "^1.95",
-		"typescript": "~5.9"
+		"typescript": "^6.0"
 	},
 	"engines": {
-		"node": ">=18"
+		"node": ">=24"
 	},
 	"exports": "./cjs/print.js",
 	"homepage": "https://it.rocks",
@@ -27,8 +27,8 @@
 		"config.yaml",
 		"LICENSE",
 		"README.md",
-		"cjs/*",
-		"css/*",
+		"cjs",
+		"css",
 		"!*.map"
 	],
 	"keywords": [
@@ -61,6 +61,5 @@
 		"build": "tsc && npm run build:css",
 		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
-	"types": "./cjs/print.d.ts",
-	"version": "0.0.12"
+	"version": "0.1.0"
 }
