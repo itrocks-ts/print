@@ -16,7 +16,7 @@
 		"@types/pdfkit": "^0.17",
 		"@types/svg-to-pdfkit": "^0.1",
 		"sass": "^1.95",
-		"typescript": "^6.0"
+		"typescript": "^7.0"
 	},
 	"engines": {
 		"node": ">=24"
@@ -61,5 +61,5 @@
 		"build": "tsc && npm run build:css",
 		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
 	},
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
