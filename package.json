@@ -59,7 +59,7 @@
 	},
 	"scripts": {
 		"build": "tsc && npm run build:css",
-		"build:css": "sass --no-source-map src:css && cp src/*.svg css/"
+		"build:css": "sass --no-source-map src:css && node -e \"const fs=require('node:fs'),path=require('node:path');for(const file of fs.readdirSync('src'))if(file.endsWith('.svg'))fs.copyFileSync(path.join('src',file),path.join('css',file))\""
 	},
-	"version": "0.1.1"
+	"version": "0.2.0"
 }
